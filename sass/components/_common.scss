@@ -1,0 +1,70 @@
+.logo {
+  display: block;
+  color: $color-text-accent;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  &__text {
+    color: #000000;
+  }
+
+  &__text--light {
+    color: #ffffff;
+  }
+}
+
+.header__logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
+}
+
+.footer__logo {
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.main-button {
+  display: flex;
+
+  width: 200px;
+  height: 50px;
+  padding: 10px 10px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  color: $color-text-white;
+  background-color: $color-text-accent;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+
+  transition: background-color 250ms $function-cubic;
+
+  &:hover, &:focus {
+    background-color: #188ce8;
+  }
+}
+
+.section-title {
+  color: $color-text-secondary;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
