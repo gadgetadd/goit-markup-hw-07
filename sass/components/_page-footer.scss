@@ -1,0 +1,120 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $color-bg-dark;
+}
+
+.footer__logo {
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.footer-address__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer-address__link {
+    color: $color-text-white;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+
+    transition: color 250ms $function-cubic;
+
+    &:hover, &:focus {
+        color: $color-text-accent;
+    }
+
+    &--contact {
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.footer-links {
+    display: flex;
+    gap: 70px;
+    align-items: baseline;
+}
+
+.footer-socials__list {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-title {
+    color: $color-text-white;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.footer-socials__title {
+    margin-bottom: 20px;
+}
+
+.footer-socials__item {
+    width: 44px;
+    height: 44px;
+}
+
+.footer-socials__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: $color-text-white;
+
+    transition: background-color 250ms $function-cubic;
+
+    &:hover, &:focus {
+        background-color: $color-text-accent;
+    }
+}
+
+.footer-socials__icon {
+    fill: currentColor;
+}
+
+.footer-form__form {
+    display: flex;
+}
+
+.footer-form__title {
+    margin-bottom: 20px;
+}
+
+.footer-form__input {
+    width: 358px;
+    height: 50px;
+    padding: 14px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: $color-bg-dark;
+    font-size: 16px;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+
+    &:not(:placeholder-shown) {
+        background-color: $color-bg-dark;
+    }
+}
+
+.footer-form__button {
+    gap: 10px;
+    margin-left: 12px;
+}

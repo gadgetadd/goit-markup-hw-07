@@ -1,0 +1,33 @@
+.clients__title {
+  margin-bottom: 50px;
+}
+
+.clients__list {
+  display: flex;
+  gap: 30px;
+}
+
+.client__item {
+  flex-basis: calc((100% - 150px) / 6);
+}
+
+.client__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 92px;
+  border: 1px solid $color-icon;
+  border-radius: 4px;
+  color: $color-icon;
+
+  transition: color 250ms $function-cubic, border-color 250ms $function-cubic;
+
+  &:hover, &:focus {
+    border-color: $color-text-accent;
+    color: $color-text-accent;
+  }
+}
+
+.client__icon {
+  fill: currentColor;
+}
